@@ -1,0 +1,207 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests in <SearchScreen /> should load correctly with default values 1`] = `
+<div>
+  <h1>
+    Search Screen
+  </h1>
+  <hr />
+  <div
+    className="row"
+  >
+    <div
+      className="col-5"
+    >
+      <h4>
+        Search Form
+      </h4>
+      <form
+        onSubmit={[Function]}
+      >
+        <input
+          className="form-control"
+          name="heroeToSearch"
+          onChange={[Function]}
+          placeholder="Enter your hero"
+          type="text"
+          value=""
+        />
+        <button
+          className="btn btn-outline-primary btn-block"
+          type="submit"
+        >
+          Search
+        </button>
+      </form>
+    </div>
+    <div
+      className="col-7"
+    >
+      <h4>
+        Results
+      </h4>
+      <hr />
+      <div
+        className="alert alert-info"
+      >
+        Search a hero
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Tests in <SearchScreen /> should show Batman and the input with the queryString value 1`] = `
+<div>
+  <h1>
+    Search Screen
+  </h1>
+  <hr />
+  <div
+    className="row"
+  >
+    <div
+      className="col-5"
+    >
+      <h4>
+        Search Form
+      </h4>
+      <form
+        onSubmit={[Function]}
+      >
+        <input
+          className="form-control"
+          name="heroeToSearch"
+          onChange={[Function]}
+          placeholder="Enter your hero"
+          type="text"
+          value="batman"
+        />
+        <button
+          className="btn btn-outline-primary btn-block"
+          type="submit"
+        >
+          Search
+        </button>
+      </form>
+    </div>
+    <div
+      className="col-7"
+    >
+      <h4>
+        Results
+      </h4>
+      <hr />
+      <div
+        className="card ms-3"
+        style={
+          Object {
+            "maxWidth": 540,
+          }
+        }
+      >
+        <div
+          className="row no-gutters"
+        >
+          <div
+            className="col-md-4"
+          >
+            <img
+              alt="Batman"
+              className="card-img"
+              src="./assets/heroes/dc-batman.jpg"
+            />
+          </div>
+          <div
+            className="col-md-8"
+          >
+            <div
+              className="card-body"
+            >
+              <h5
+                className="card-title"
+              >
+                Batman
+              </h5>
+              <p
+                className="card-text"
+              >
+                Bruce Wayne
+              </p>
+              <p
+                className="card-text"
+              >
+                <small
+                  className="text-muted"
+                >
+                  Detective Comics #27
+                </small>
+              </p>
+              <a
+                href="/hero/dc-batman"
+                onClick={[Function]}
+              >
+                ...More
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Tests in <SearchScreen /> should show an alert when the hero does not exist 1`] = `
+<div>
+  <h1>
+    Search Screen
+  </h1>
+  <hr />
+  <div
+    className="row"
+  >
+    <div
+      className="col-5"
+    >
+      <h4>
+        Search Form
+      </h4>
+      <form
+        onSubmit={[Function]}
+      >
+        <input
+          className="form-control"
+          name="heroeToSearch"
+          onChange={[Function]}
+          placeholder="Enter your hero"
+          type="text"
+          value="batman132"
+        />
+        <button
+          className="btn btn-outline-primary btn-block"
+          type="submit"
+        >
+          Search
+        </button>
+      </form>
+    </div>
+    <div
+      className="col-7"
+    >
+      <h4>
+        Results
+      </h4>
+      <hr />
+      <div
+        className="alert alert-danger"
+      >
+        No results for 
+        <b>
+          batman132
+        </b>
+      </div>
+    </div>
+  </div>
+</div>
+`;
